@@ -4,7 +4,7 @@ public static void main(String args[]){
 try{
 Class.forName("com.mysql.cj.jdbc.Driver");
 Connection 
-c=DriverManager.getConnection("jdbc:mysql://localhost:3306/seshu","seshunagu","Seshu@1608$");
+c=DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name","your_database_username","your_database_password");
 System.out.println("Driver loaded successfully");
 Statement s=c.createStatement();
 s.execute("ALTER TABLE mywipro modify first_name varchar(30)");
